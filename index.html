@@ -2,156 +2,187 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jyotirmaya Ijaradar - Research Scientist</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jyotirmaya Ijaradar - Research Scientist</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <!-- Custom CSS -->
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-    }
+        .navbar {
+            margin-bottom: 30px;
+        }
 
-    .navbar {
-      margin-bottom: 50px;
-    }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #0056b3;
+            color: white;
+        }
 
-    .header {
-      background: #0056b3;
-      color: white;
-      padding: 60px 0;
-      text-align: center;
-    }
+        .header h1 {
+            font-size: 3rem;
+        }
 
-    .header h1 {
-      font-size: 3rem;
-    }
+        .header p {
+            font-size: 1.2rem;
+        }
 
-    .section-title {
-      margin-bottom: 30px;
-      text-align: center;
-    }
+        .section-title {
+            margin-top: 50px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
 
-    .section-title h2 {
-      font-weight: bold;
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
+        .contact-icons a {
+            margin-right: 10px;
+            color: #0056b3;
+            font-size: 1.5rem;
+        }
 
-    .about img {
-      max-width: 250px;
-      border-radius: 50%;
-    }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f8f9fa;
+        }
 
-    .publication {
-      margin-bottom: 30px;
-    }
-
-    .contact-icons a {
-      margin-right: 15px;
-      color: #0056b3;
-      font-size: 1.5rem;
-    }
-
-    footer {
-      background: #f8f9fa;
-      padding: 20px 0;
-      text-align: center;
-    }
-  </style>
+        .publication, .project, .news-item, .student, .presentation {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="#">Jyotirmaya Ijaradar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-        <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
-        <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Jyotirmaya Ijaradar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#bio">Bio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#presentations">Presentations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#students">Supervised Students</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Jyotirmaya Ijaradar</h1>
+        <p>Research Scientist | Traffic Big Data Analysis | AI-Centric Mobility</p>
     </div>
-  </nav>
 
-  <!-- Header -->
-  <div class="header">
-    <h1>Jyotirmaya Ijaradar</h1>
-    <p>Research Scientist | Traffic Big Data Analysis | AI-Centric Mobility</p>
-  </div>
-
-  <!-- About Section -->
-  <section id="about" class="container text-center about">
-    <div class="row">
-      <div class="col-md-4">
-        <img src="assets/img/profile.jpg" alt="Jyotirmaya Ijaradar" class="img-fluid">
-      </div>
-      <div class="col-md-8">
-        <h2>About Me</h2>
+    <!-- Bio Section -->
+    <section id="bio" class="container">
+        <div class="section-title">
+            <h2>About Me</h2>
+        </div>
         <p>
-          I am a Research Associate at <a href="https://tu-dresden.de/" target="_blank">Technische Universität Dresden</a>, specializing in traffic process automation. With an MSc degree in Computational Modelling and Simulation from TU Dresden, my work focuses on AI-driven methodologies to enhance mobility systems and optimize traffic networks.
+            I am a Research Associate at <a href="https://tu-dresden.de" target="_blank">Technische Universität Dresden</a>, specializing in traffic process automation. My research focuses on leveraging machine learning and AI-driven methods to enhance traffic systems and optimize urban mobility networks.
         </p>
-      </div>
-    </div>
-  </section>
+        <p>
+            I hold an MSc degree in Computational Modelling and Simulation from <a href="https://tu-dresden.de" target="_blank">Technische Universität Dresden</a>.
+        </p>
+    </section>
 
-  <!-- Research Areas Section -->
-  <section id="research" class="container">
-    <div class="section-title">
-      <h2>Research Areas</h2>
-    </div>
-    <ul class="list-group">
-      <li class="list-group-item">Machine Learning for Traffic Big Data Analysis</li>
-      <li class="list-group-item">Data-driven Approach for Traffic Optimization</li>
-      <li class="list-group-item">Development of AI-centric methods for autonomous mobility systems</li>
-      <li class="list-group-item">Advanced Driving Assistant System (ADAS)</li>
-    </ul>
-  </section>
+    <!-- News Section -->
+    <section id="news" class="container">
+        <div class="section-title">
+            <h2>News</h2>
+        </div>
+        <div class="news-item">
+            <p><strong>November 2024:</strong> Presented at the International Conference on Urban Data Science in Dresden.</p>
+        </div>
+        <div class="news-item">
+            <p><strong>October 2024:</strong> Published a paper on lane matching techniques in <em>Transportation Research Part C</em>.</p>
+        </div>
+    </section>
 
-  <!-- Publications Section -->
-  <section id="publications" class="container">
-    <div class="section-title">
-      <h2>Publications</h2>
-    </div>
-    <div class="publication">
-      <h4>An Imputation-Enhanced Hybrid Deep Learning Approach for Traffic Volume Prediction in Urban Networks</h4>
-      <p>Yan, P., Li, Z., <strong>Ijaradar, J.</strong>, et al. | <i>Data Science for Transportation</i>, 2024</p>
-      <a href="https://doi.org/10.1016/j.cleanprod.2024.143274" target="_blank">Read More</a>
-    </div>
-    <!-- Add more publications in a similar format -->
-  </section>
+    <!-- Publications Section -->
+    <section id="publications" class="container">
+        <div class="section-title">
+            <h2>Publications</h2>
+        </div>
+        <div class="publication">
+            <p><strong>An Imputation-Enhanced Hybrid Deep Learning Approach for Traffic Volume Prediction</strong><br>
+                <em>Yan, P., Li, Z., Ijaradar, J.</em> et al. | Data Science for Transportation, 2024</p>
+        </div>
+        <!-- Add more publications similarly -->
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="container text-center">
-    <div class="section-title">
-      <h2>Contact</h2>
-    </div>
-    <p>Feel free to reach out via email or connect on social platforms.</p>
-    <div class="contact-icons">
-      <a href="mailto:jyotirmaya.ijaradar@tu-dresden.de"><i class="far fa-envelope"></i></a>
-      <a href="https://github.com/jyotirmayaijaradar" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/jyotirmaya-ijaradar" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+        <div class="section-title">
+            <h2>Projects</h2>
+        </div>
+        <div class="project">
+            <p><strong>Large-Scale Traffic Data Imputation</strong><br>
+                A case study in Dresden leveraging deep learning techniques for improved accuracy.</p>
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Jyotirmaya Ijaradar | Designed by [Your Name]</p>
-  </footer>
+    <!-- Teaching Section -->
+    <section id="teaching" class="container">
+        <div class="section-title">
+            <h2>Teaching</h2>
+        </div>
+        <p>Currently mentoring MSc students and conducting seminars on AI-driven traffic systems.</p>
+    </section>
 
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Presentations Section -->
+    <section id="presentations" class="container">
+        <div class="section-title">
+            <h2>Presentations</h2>
+        </div>
+        <div class="presentation">
+            <p><strong>Traffic Data Imputation Challenges</strong><br>
+                International Conference on Traffic Data Science, 2024</p>
+        </div>
+    </section>
+
+    <!-- Supervised Students Section -->
+    <section id="students" class="container">
+        <div class="section-title">
+            <h2>Supervised Students</h2>
+        </div>
+        <div class="student">
+            <p><strong>2024 - Student Name</strong> (MSc Thesis)</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container text-center">
+        <div class="section-title">
+            <h2>Contact</h2>
+        </div>
+        <p>Email: <a href="mailto:jyotirmaya.ijaradar@tu-dresden.de">jyotirmaya.ijaradar@tu-dresden.de</a></p>
+        <div class="contact-icons">
+            <a href="mailto:jyotirmaya.ijaradar@tu-dresden.de"><i class="far fa-envelope"></i></a>
+            <a href="https://github.com/jyotirmayaijaradar" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jyotirmaya-ijaradar" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Jyotirmaya Ijaradar</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
